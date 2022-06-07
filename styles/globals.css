@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 html,
 body {
   padding: 0;
@@ -13,4 +16,26 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+@layer utilities {
+  .h-265 {
+    height: 265px;
+  }
+}
+
+@layer utilities {
+  .w-265 {
+    width: 265px;
+  }
+}
+
+@layer utilities {
+  .w-910 {
+    width: calc(100% / 1.05);
+  }
+}
+
+.ant-tabs-tab {
+  color: #363636 !important;
 }
